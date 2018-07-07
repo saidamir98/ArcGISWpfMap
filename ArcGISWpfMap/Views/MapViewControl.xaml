@@ -22,7 +22,11 @@
 
 
             <StackPanel Grid.Column="0" Grid.Row="0">
-                <Button Width="100" Height="50"></Button>
+                <StackPanel Orientation="Horizontal">
+                    <Button Command="{Binding Undo}" Width="30" Height="25">◄</Button>
+                    <Button Command="{Binding ClearCurrentCommandBtnClick}" Width="40" Height="25"></Button>
+                    <Button Command="{Binding Redo}" Width="30" Height="25">►</Button>
+                </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Button Command="{Binding PointBtnClick}" Width="50" Height="50">Point</Button>
                     <Button Width="50" Height="50">RemovePoint</Button>
